@@ -50,6 +50,7 @@ table {
 // RESET---------------------------
 
 // CURSOR----------------------------
+
 .cursor{
   width: 20px;
   height: 20px;
@@ -60,6 +61,7 @@ table {
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
 }
 
 .cursor::after{
@@ -119,6 +121,8 @@ html{
 strong{
   font-weight: 700;
 }
+
+
 body{
   margin: 0;
   padding: 0;
@@ -154,7 +158,7 @@ body{
     color: black;
   }
 
-  /* Style the header: fixed position (always stay at the top) */
+// SCROLL INDICATOR
 .header {
   position: fixed;
   top: 0;
@@ -166,13 +170,13 @@ body{
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
-  height: 8px;
+  height: 10px;
   background: #F3F2F0;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 8px;
+  height: 10px;
   background: $accentcolor1;
   width: 0%;
 }
@@ -403,6 +407,10 @@ body{
 // SECTION3---------------------
 #section3, #section4, #section5{
 
+  a:hover{
+    color: black;
+  }
+
   h1{
     width: 90%;
     margin: 0 auto;
@@ -451,6 +459,9 @@ body{
         font-size: 1rem;
         text-decoration: underline $accentcolor1;
         color: $textcolor;
+      }
+      a:hover{
+        color: black;
       }
 
       li{
@@ -563,7 +574,7 @@ body{
 
       p{
         font-family: $arvo;
-        font-weight: 700 !important;
+        // font-weight: 700 !important;
         color: $textcolor;
       }
 
@@ -571,6 +582,9 @@ body{
         font-size: 1rem;
         text-decoration: underline $accentcolor1;
         color: $textcolor;
+      }
+      a:hover{
+        color: black;
       }
 
       li{
@@ -597,7 +611,6 @@ body{
       line-height: 1.618rem;
       font-family: $arvo;
       color: $textcolor;
-      font-weight: 700;
     }
 
     a{

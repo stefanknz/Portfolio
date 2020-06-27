@@ -59,12 +59,13 @@ table {
   border-radius: 50%;
   position: absolute;
   z-index: 2;
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   -webkit-animation: cursorAnim .5s infinite alternate;
           animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
 }
 
 .cursor::after {
@@ -131,7 +132,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F3F2F0;
-  /* Style the header: fixed position (always stay at the top) */
   /* The progress container (grey background) */
   /* The progress bar (scroll indicator) */
 }
@@ -175,12 +175,12 @@ body .header {
 
 body .progress-container {
   width: 100%;
-  height: 8px;
+  height: 10px;
   background: #F3F2F0;
 }
 
 body .progress-bar {
-  height: 8px;
+  height: 10px;
   background: #DB3F26;
   width: 0%;
 }
@@ -399,6 +399,9 @@ body .progress-bar {
     margin: 0 auto;
     margin-bottom: 1.618rem;
   }
+  #section3 a:hover, #section4 a:hover, #section5 a:hover {
+    color: black;
+  }
   #section3 h1, #section4 h1, #section5 h1 {
     width: 90%;
     margin: 0 auto;
@@ -443,6 +446,9 @@ body .progress-bar {
     -webkit-text-decoration: underline #DB3F26;
             text-decoration: underline #DB3F26;
     color: #292727;
+  }
+  #section3 .info .responsibilities a:hover, #section3 .info .credit a:hover, #section3 .info .tools a:hover, #section4 .info .responsibilities a:hover, #section4 .info .credit a:hover, #section4 .info .tools a:hover, #section5 .info .responsibilities a:hover, #section5 .info .credit a:hover, #section5 .info .tools a:hover {
+    color: black;
   }
   #section3 .info .responsibilities li, #section3 .info .credit li, #section3 .info .tools li, #section4 .info .responsibilities li, #section4 .info .credit li, #section4 .info .tools li, #section5 .info .responsibilities li, #section5 .info .credit li, #section5 .info .tools li {
     list-style: none;
@@ -526,7 +532,6 @@ body .progress-bar {
   }
   #section6 .info .responsibilities p, #section6 .info .credit p, #section6 .info .tools p {
     font-family: "Arvo", serif;
-    font-weight: 700 !important;
     color: #292727;
   }
   #section6 .info .responsibilities a, #section6 .info .credit a, #section6 .info .tools a {
@@ -534,6 +539,9 @@ body .progress-bar {
     -webkit-text-decoration: underline #DB3F26;
             text-decoration: underline #DB3F26;
     color: #292727;
+  }
+  #section6 .info .responsibilities a:hover, #section6 .info .credit a:hover, #section6 .info .tools a:hover {
+    color: black;
   }
   #section6 .info .responsibilities li, #section6 .info .credit li, #section6 .info .tools li {
     list-style: none;
@@ -554,7 +562,6 @@ body .progress-bar {
     line-height: 1.618rem;
     font-family: "Arvo", serif;
     color: #292727;
-    font-weight: 700;
   }
   #section6 .descript a {
     font-size: 1rem;
