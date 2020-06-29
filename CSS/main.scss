@@ -187,10 +187,14 @@ body{
 
 
 @media (min-width:300px){
+
+  .cursor{
+    display: none;
+  }
 // HEADER-----------------------
   .header-container{
   width: 100%;
-  position: fixed;
+  // position: fixed;
   z-index: 100;
 
   header{
@@ -402,8 +406,8 @@ body{
   width: 3rem;
   height: 1.25rem;
   border-top: 2px solid #707070;
-  margin: 0 auto;
-  margin-bottom: 1.618rem;
+  margin: 6.472rem auto;
+  
 }
 // SECTION2---------------------
 
@@ -881,6 +885,10 @@ body{
 }
 
 @media (min-width: 1060px){
+
+  .cursor{
+    display: block;
+  }
   // SECTION2---------------------
   #section2{
     .cards{
@@ -888,7 +896,7 @@ body{
     }
 
     .line{
-      margin-bottom: 6.472rem;;
+      margin-bottom: 6.472rem;
     }
   
   }
